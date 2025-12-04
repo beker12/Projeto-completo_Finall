@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextStap - Admin</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">NextStap - Admin</div>
+      <ul class="nav-links">
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="login.html">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="botoes-acessibilidade">
+    <button id="acessibilidade" class="acessibilidade" aria-label="Aumentar tamanho das letras">A+</button>
+    <button id="contraste" class="acessibilidade" aria-label="Alto contraste">Contraste</button>
+  </div>
+
+  <main class="container">
+    <div class="cadastro-container">
+      <h2>Cadastrar Usuários</h2>
+      <p class="subtitulo">Área administrativa para registrar usuários da aplicação.</p>
+
+      <form id="admin-form">
+        <label for="admin-nome">Nome do usuário:</label>
+        <input type="text" id="admin-nome" required />
+
+        <label for="admin-email">E-mail:</label>
+        <input type="email" id="admin-email" required />
+
+        <div class="botoes-form">
+          <button type="submit">Cadastrar</button>
+          <button type="button" id="admin-limpar">Limpar campos</button>
+        </div>
+      </form>
+
+      <section>
+        <div class="cabecalho-lista">
+          <h3>Lista de usuários</h3>
+          <button type="button" id="excluir-todos">Excluir todos</button>
+        </div>
+        <ul id="admin-lista"></ul>
+      </section>
+
+      <hr />
+
+      <section>
+        <h3>Pesquisar usuários</h3>
+        <div class="botoes-pesquisa">
+          <input type="text" id="admin-pesquisa" placeholder="Pesquisar por nome ou e-mail" />
+          <button type="button" id="pesquisar">Pesquisar</button>
+          <button type="button" id="limpar-pesquisa">Limpar pesquisa</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>2025 NextStap - Área Administrativa</p>
+    <div class="redes-sociais">
+      <a href="https://www.instagram.com/beker.ds/" target="_blank" rel="noopener noreferrer" class="social-link">
+        <img src="assest/intagram.jpeg" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/giovanni-beker-934976344/" target="_blank" rel="noopener noreferrer" class="social-link">
+        <img src="assest/linkedin[.png" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
